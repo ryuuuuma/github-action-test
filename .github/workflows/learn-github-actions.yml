@@ -11,3 +11,9 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Hello, world!"
+      - run: ls .
